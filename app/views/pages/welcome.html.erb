@@ -1,9 +1,11 @@
 <h2>Pages#welcome</h2>
 
+<!-- Inline Template - pass data to Vue -->
 <app inline-template :message="<%= "Hello Vue in Ruby on Rails".to_json %>">
   <h2>{{ message }}</h2>
 </app>
 
-<% 1.upto(10).each do |i| %>
+<% 1.upto(5).each do |i| %>
+  <!-- Component -->
   <app :message="<%= "testing".to_json %>"></app>
 <% end %>

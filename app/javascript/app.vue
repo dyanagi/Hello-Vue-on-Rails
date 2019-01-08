@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
+  <div class="test-component">
+    Repeat twice: {{ message }} {{message}}
   </div>
 </template>
 
