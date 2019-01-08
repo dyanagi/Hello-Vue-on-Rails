@@ -1,24 +1,25 @@
-# README
+# Hello Vue on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby 2.5.3
+* Rails 5.2
 
-Things you may want to cover:
+## Running the server
 
-* Ruby version
+```bash
+rails s
+```
 
-* System dependencies
+on a separate terminal, run
 
-* Configuration
+```bash
+ bin/webpack-dev-server
+```
 
-* Database creation
+## References
 
-* Database initialization
+USING RAILS AND VUE JS, PART 1
+https://www.engineyard.com/blog/rails-and-vue-js-part-1
 
-* How to run the test suite
+Vue.js Components in Rails Views
+https://gorails.com/episodes/vuejs-components-in-rails-views
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
