@@ -1,36 +1,9 @@
-<h1>Pages#welcome</h1>
+<h2>Pages#welcome</h2>
 
-<app :message="<%= "testing".to_json %>"></app>
+<app inline-template :message="<%= "Hello Vue in Ruby on Rails".to_json %>">
+  <h2>{{ message }}</h2>
+</app>
 
-<!--<div id="app">-->
-<!--  {{ message }}-->
-<!--</div>-->
-
-<!--<div id="app-2">-->
-<!--  <span v-bind:title="message">-->
-<!--    Hover your mouse over me for a few seconds-->
-<!--    to see my dynamically bound title!-->
-<!--  </span>-->
-<!--</div>-->
-
-<!--<div id="app-3">-->
-<!--  <span v-if="seen">Now you see me</span>-->
-<!--</div>-->
-
-<!--<div id="app-4">-->
-<!--  <ol>-->
-<!--    <li v-for="todo in todos">-->
-<!--      {{ todo.text }}-->
-<!--    </li>-->
-<!--  </ol>-->
-<!--</div>-->
-
-<!--<div id="app-5">-->
-<!--  <p>{{ message }}</p>-->
-<!--  <button v-on:click="reverseMessage">Reverse Message</button>-->
-<!--</div>-->
-
-<!--<div id="app-6">-->
-<!--  <p>{{ message }}</p>-->
-<!--  <input v-model="message">-->
-<!--</div>-->
+<% 1.upto(10).each do |i| %>
+  <app :message="<%= "testing".to_json %>"></app>
+<% end %>
