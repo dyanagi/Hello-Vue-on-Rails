@@ -33,58 +33,47 @@
 /public/packs-test
 yarn-debug.log*
 
+### Additional Ignoring Items
+## JetBrains: covers RubyMine and IntelliJ IDEA (with Ruby plugin)
+# References:
+# - https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+# - https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+/.idea/*
 
-### JetBrains template
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+# .iml module files, which are recommended to add
+!/.idea/modules.xml
+!/*.iml
 
-# User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/dictionaries
-.idea/**/shelf
+# Shared configurations (Run/Debug configurations with 'Share' checked)
+!/.idea/runConfigurations/
 
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
+# Make it easier to import data sources
+!/.idea/dataSources.xml
 
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+# Encoding settings
+!/.idea/encodings.xml
 
-# CMake
-cmake-build-debug/
-cmake-build-release/
+# For better use of spell checker (except 'dictionaries' dir, ignore all files under it except some user-specific setting files)
+!.idea/dictionaries/
+.idea/dictionaries/*
+!.idea/dictionaries/user-name.xml
 
-# Mongo Explorer plugin
-.idea/**/mongoSettings.xml
+# Others
+!/.idea/vcs.xml
 
-# File-based project format
-*.iws
+## JetBrains Plugins
+# Railways
+/railways.cache
 
-# IntelliJ
-out/
+## Gems
+# rails-erd gem
+/erd.pdf
 
-# mpeltonen/sbt-idea plugin
-.idea_modules/
+# Webpacker/JavaScript
+.yarn-integrity
 
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Cursive Clojure plugin
-.idea/replstate.xml
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-
-# Editor-based Rest Client
-.idea/httpRequests
-
+## Others
+# We do not use following test methods at this moment. Consider using system specs or remove from here
+/spec/controllers/
+/spec/requests/
+/spec/routing/
